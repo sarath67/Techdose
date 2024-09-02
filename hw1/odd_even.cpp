@@ -2,7 +2,7 @@
 using namespace std;
 
 bool find_odd_even(int x) {
-    return x & 1;
+    return x&1;
 }
 
 int main() {

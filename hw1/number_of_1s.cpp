@@ -6,15 +6,15 @@ int findset(int num){
     int count=0;
     while(num)
     {
-        count += (num & 1);
-        num >>= 1;
+        count+=(num&1);
+        num>>=1;
     }
     return count;
 }
 int main()
 {
     int inp;
-    cin >> inp;
-    cout << findset(inp);
+    cin>>inp;
+    cout<<findset(inp);
 
 }

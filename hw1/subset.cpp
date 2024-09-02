@@ -4,13 +4,13 @@
 using namespace std;
 
 void sub(vector<int>& arr) {
-    int n = arr.size();
-    int cnt = 1 << n;
+    int n =arr.size();
+    int cnt =1<<n;
 
-    for (int i = 0; i < cnt; i++) {
+    for (int i=0;i<cnt;i++) {
         vector<int> subset;
 
-        for (int j = 0; j < n; j++) {
+        for (int j=0;j<n;j++) {
             if (i & (1 << j)) {
                 subset.push_back(arr[j]);
             }
@@ -19,7 +19,7 @@ void sub(vector<int>& arr) {
         for (int num : subset) {
             cout << num << " ";
         }
-        cout << "}" << endl;
+        cout <<"}"<<endl;
     }
 }
 
